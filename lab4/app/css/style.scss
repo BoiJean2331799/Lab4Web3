@@ -1,0 +1,119 @@
+@use "../../node_modules/bootstrap/scss/bootstrap.scss" as * with(
+    $primary: #00ADB5,
+    $theme-colors: (
+        "primary": #00ADB5
+    )
+);
+
+$csSecondary: #393E46;
+$csPrimary: #222831;
+$csWhite: #EEEEEE;
+
+.csSecondary{
+    background-color: $csSecondary !important;
+}
+
+.test{
+    background-color: $primary !important;
+}
+
+.csPrimary 
+{
+    background-color: $csPrimary !important;
+}
+
+.csWhite 
+{
+    color: $csWhite !important;
+    font-family: "Open Sans", serif !important;
+} 
+
+.csWhiteBackground
+{
+    background-color: $csWhite !important;
+}
+
+.csText
+{
+    font-weight: bold !important;
+    font-size: 18px !important;
+    font-family: "Lora", serif !important;
+}
+
+.csBlogTitle
+{
+    font-weight: bold !important;
+    font-size: 30px !important;
+    font-family: "Lora", serif !important;
+}
+
+.csIconComment
+{
+    color: $csSecondary !important;
+}
+
+.csUserIcon
+{
+    color: $csPrimary !important;
+    font-size: 50px !important;
+}
+
+.csBorderT{
+    border-top: $csWhite 1px solid !important;
+}
+
+.csBorderB{
+    border-bottom: $csWhite 1px solid !important;
+}
+
+.csBorder{
+    border: $csWhite 1px solid !important;
+}
+
+.csButton {
+    height: 15% !important;
+    width: 25% !important;
+    border-radius: 10px !important;
+    border: $csWhite 2px solid !important;
+    background-color: $csSecondary !important;
+    font-weight: bold !important;
+
+    @media (min-width: 992px) {
+        width: 10% !important;
+    }
+
+    @media (max-width: 991px) {
+        width: 25% !important;
+    }
+}
+
+.csButton:hover{
+    border: $primary 2px solid !important;
+    background-color: $csWhite !important;
+}
+
+.csInputs{
+    height: 35px !important;
+    background-color: $csWhite !important;
+    border-radius: 5px !important;
+    outline: none !important;
+}
+
+.csHover{
+    transition: transform 0.5s ease !important;
+}
+
+.csHover:hover{
+    border: $primary 1px solid !important;
+    transform: scale(1.02) !important;
+}
+
+.csFocus 
+{
+    border: 3px solid transparent !important;
+    transition: box-shadow 0.3s ease !important;
+}
+
+.csFocus:focus{
+    box-shadow: 0 0 10px $primary !important;
+}
